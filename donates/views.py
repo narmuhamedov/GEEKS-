@@ -43,3 +43,5 @@ def donate_list_view(request):
         donate = models.Donate.objects.all().order_by('-id')
     return render(request, 'donates/donate_list.html', {'donate': donate})
     
+
+
